@@ -31,14 +31,14 @@ T]}$を大量に生成することで，$S_T$の期待値を求める．
 
 モンテカルロシミュレーションによって生成された，満期$T$における原資産価格$S_T$の$n$個のサンプルを$(s^{(1)}_{T}, \cdots, s^{(n)}_{T})$とすると，
 時刻$t \in [0, T]$におけるオプションの価格の推定値$\hat{C}(t, S_t)$は
-\begin{align}
-    \hat{C}(t, S_t) &= \frac{1}{n} \sum_{i=1}^{n} e^{-r(T-t)} \cdot max(s^{(i)}_{T} - K, 0)
-\end{align}
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{150}&space;\fn_cm&space;\begin{align}&space;\hat{C}(t,&space;S_t)&space;&=&space;\frac{1}{n}&space;\sum_{i=1}^{n}&space;e^{-r(T-t)}&space;\cdot&space;max(s^{(i)}_{T}&space;-&space;K,&space;0)&space;\nonumber&space;\end{align}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\dpi{150}&space;\fn_cm&space;\begin{align}&space;\hat{C}(t,&space;S_t)&space;&=&space;\frac{1}{n}&space;\sum_{i=1}^{n}&space;e^{-r(T-t)}&space;\cdot&space;max(s^{(i)}_{T}&space;-&space;K,&space;0)&space;\nonumber&space;\end{align}" title="\begin{align} \hat{C}(t, S_t) &= \frac{1}{n} \sum_{i=1}^{n} e^{-r(T-t)} \cdot max(s^{(i)}_{T} - K, 0) \nonumber \end{align}" /></a>
+
 と求められる．
 ここで，簡単のために満期$T$を$1$とすると，現在($t=0$)のオプション価格の推定値は，
-\begin{align}
-    \hat{C}(0, S_0) &= \frac{1}{n} \sum_{i=1}^{n} e^{-r} \cdot max(s^{(i)}_{1} - K, 0)
-\end{align}
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{150}&space;\fn_cm&space;\begin{align}&space;\hat{C}(0,&space;S_0)&space;&=&space;\frac{1}{n}&space;\sum_{i=1}^{n}&space;e^{-r}&space;\cdot&space;max(s^{(i)}_{1}&space;-&space;K,&space;0)&space;\nonumber&space;\end{align}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\dpi{150}&space;\fn_cm&space;\begin{align}&space;\hat{C}(0,&space;S_0)&space;&=&space;\frac{1}{n}&space;\sum_{i=1}^{n}&space;e^{-r}&space;\cdot&space;max(s^{(i)}_{1}&space;-&space;K,&space;0)&space;\nonumber&space;\end{align}" title="\begin{align} \hat{C}(0, S_0) &= \frac{1}{n} \sum_{i=1}^{n} e^{-r} \cdot max(s^{(i)}_{1} - K, 0) \nonumber \end{align}" /></a>
+
 となる．
 
 <img src="https://github.com/yumaloop/BlackScholesOptionPricing/blob/main/figures/BSCallOptionMC1.png">
